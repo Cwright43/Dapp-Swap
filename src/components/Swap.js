@@ -50,7 +50,6 @@ const Swap = ({ dappAccountBalance,
 
   // Declare AMM Variable - Active Contract Address
     const amm = useSelector(state => state.amm.contract)
-    const aggregator = useSelector(state => state.amm.aggregator)
     const isSwapping = useSelector(state => state.amm.swapping.isSwapping)
     const isSuccess = useSelector(state => state.amm.swapping.isSuccess)
     const transactionHash = useSelector(state => state.amm.swapping.transactionHash)
@@ -62,7 +61,7 @@ const Swap = ({ dappAccountBalance,
 
   const inputHandler = async (e) => {
 
-        if (e.target.value == 0) {
+        if (e.target.value === 0) {
           setPrice(0)
           setOutputAmount(0)
           setExchangeRate(0)

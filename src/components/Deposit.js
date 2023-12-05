@@ -21,9 +21,6 @@ const Deposit = () => {
   const [showAlert, setShowAlert] = useState(false)
 
   const [token1Final, setToken1Final] = useState(0)
-  const [token2Final, setToken2Final] = useState(0)
-
-  const [price, setPrice] = useState(0)
 
   const provider = useSelector(state => state.provider.connection)
   const account = useSelector(state => state.provider.account)

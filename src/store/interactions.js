@@ -31,7 +31,6 @@ import {
 
 import TOKEN_ABI from '../abis/Token.json';
 import AMM_ABI from '../abis/AMM.json';
-import AGGREGATOR_ABI from '../abis/Aggregator.json';
 import config from '../config.json';
 
 // --------------------------------------//
